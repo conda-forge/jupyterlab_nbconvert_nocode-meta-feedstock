@@ -1,11 +1,11 @@
-About jupyterlab_nbconvert_nocode-meta
-======================================
+About jupyterlab_nbconvert_nocode-meta-feedstock
+================================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/jupyterlab_nbconvert_nocode-meta-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/timkpaine/jupyterlab_nbconvert_nocode
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/jupyterlab_nbconvert_nocode-meta-feedstock/blob/main/LICENSE.txt)
 
 Summary: A simple helper library with 2 NBConvert exporters for PDF/HTML export with no code cells
 
