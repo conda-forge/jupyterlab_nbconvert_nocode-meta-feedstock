@@ -1,5 +1,5 @@
 {% set name = "jupyterlab_nbconvert_nocode" %}
-{% set version = "0.3.1" %}
+{% set version = "0.4.0" %}
 {% set build_num = 0 %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a7c1617d2b49d425984d30e5e0cc9e7e1b354bb570dab474cafffb70f61b5162
+  sha256: 93f3861686a9b24a3f4f595ba4805d154578b6847a6f5fcc01211e0b9894e95c
 
 build:
   number: {{ build_num }}
@@ -19,7 +19,7 @@ outputs:
     build:
       noarch: python
 
-    script: build_base.sh   # [unix]
+    script: build_base.sh  # [unix]
     script: build_base.bat  # [win]
 
     requirements:
