@@ -1,5 +1,5 @@
-About jupyterlab_nbconvert_nocode-meta-feedstock
-================================================
+About jupyterlab_nbconvert_nocode-feedstock
+===========================================
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/jupyterlab_nbconvert_nocode-meta-feedstock/blob/main/LICENSE.txt)
 
@@ -32,10 +32,10 @@ Current release info
 | [![Conda Recipe](https://img.shields.io/badge/recipe-jupyterlab--nbconvert--nocode-green.svg)](https://anaconda.org/conda-forge/jupyterlab-nbconvert-nocode) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/jupyterlab-nbconvert-nocode.svg)](https://anaconda.org/conda-forge/jupyterlab-nbconvert-nocode) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/jupyterlab-nbconvert-nocode.svg)](https://anaconda.org/conda-forge/jupyterlab-nbconvert-nocode) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/jupyterlab-nbconvert-nocode.svg)](https://anaconda.org/conda-forge/jupyterlab-nbconvert-nocode) |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-jupyterlab_nbconvert_nocode-green.svg)](https://anaconda.org/conda-forge/jupyterlab_nbconvert_nocode) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/jupyterlab_nbconvert_nocode.svg)](https://anaconda.org/conda-forge/jupyterlab_nbconvert_nocode) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/jupyterlab_nbconvert_nocode.svg)](https://anaconda.org/conda-forge/jupyterlab_nbconvert_nocode) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/jupyterlab_nbconvert_nocode.svg)](https://anaconda.org/conda-forge/jupyterlab_nbconvert_nocode) |
 
-Installing jupyterlab_nbconvert_nocode-meta
-===========================================
+Installing jupyterlab_nbconvert_nocode
+======================================
 
-Installing `jupyterlab_nbconvert_nocode-meta` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `jupyterlab_nbconvert_nocode` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
 
 ```
 conda config --add channels conda-forge
@@ -121,17 +121,17 @@ Terminology
                   produce the finished article (built conda distributions)
 
 
-Updating jupyterlab_nbconvert_nocode-meta-feedstock
-===================================================
+Updating jupyterlab_nbconvert_nocode-feedstock
+==============================================
 
-If you would like to improve the jupyterlab_nbconvert_nocode-meta recipe or build a new
+If you would like to improve the jupyterlab_nbconvert_nocode recipe or build a new
 package version, please fork this repository and submit a PR. Upon submission,
 your changes will be run on the appropriate platforms to give the reviewer an
 opportunity to confirm that the changes result in a successful build. Once
 merged, the recipe will be re-built and uploaded automatically to the
 `conda-forge` channel, whereupon the built conda packages will be available for
 everybody to install and use from the `conda-forge` channel.
-Note that all branches in the conda-forge/jupyterlab_nbconvert_nocode-meta-feedstock are
+Note that all branches in the conda-forge/jupyterlab_nbconvert_nocode-feedstock are
 immediately built and any created packages are uploaded, so PRs should be based
 on branches in forks and branches in the main repository should only be used to
 build distinct package versions.
