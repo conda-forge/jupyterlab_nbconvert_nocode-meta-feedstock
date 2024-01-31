@@ -2,7 +2,7 @@
 {% set version = "0.4.1" %}
 
 package:
-  name: {{ name|lower }}-meta
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
@@ -10,7 +10,7 @@ source:
   sha256: ab05796947cf4e1bce0271e324e2b86d51ef97c951e14de750df3f3f7c139299
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv --no-deps
 
 requirements:
@@ -33,8 +33,6 @@ test:
 
 outputs:
   - name: jupyterlab_nbconvert_nocode
-    build:
-      noarch: python
     requirements:
       host:
         - python >=3.8
