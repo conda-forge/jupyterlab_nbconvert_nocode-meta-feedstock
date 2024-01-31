@@ -33,11 +33,6 @@ test:
 
 outputs:
   - name: jupyterlab_nbconvert_nocode
-    requirements:
-      host:
-        - python >=3.8
-      run:
-        - python >=3.8
   - name: jupyterlab-nbconvert-nocode
     build:
       noarch: python
