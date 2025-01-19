@@ -6,21 +6,21 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: ab05796947cf4e1bce0271e324e2b86d51ef97c951e14de750df3f3f7c139299
 
 build:
-  number: 2
+  number: 3
   script: {{ PYTHON }} -m pip install . -vv --no-deps
   noarch: python
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
     - hatchling >=1.3.1
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - jupyterlab >=3.5
     - nbconvert >=6.0.0
 
@@ -31,6 +31,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 outputs:
   - name: jupyterlab_nbconvert_nocode
@@ -39,9 +40,9 @@ outputs:
       noarch: python
     requirements:
       host:
-        - python >=3.8
+        - python {{ python_min }}
       run:
-        - python >=3.8
+        - python >={{ python_min }}
         - {{ pin_subpackage("jupyterlab_nbconvert_nocode", exact=True) }}
 
 about:
