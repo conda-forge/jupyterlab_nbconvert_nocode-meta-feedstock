@@ -1,5 +1,5 @@
 {% set name = "jupyterlab_nbconvert_nocode" %}
-{% set version = "0.4.1" %}
+{% set version = "0.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: ab05796947cf4e1bce0271e324e2b86d51ef97c951e14de750df3f3f7c139299
+  sha256: 656e0431aeef9266c8973c55124ace6f7ce864f4432a029c1ab5978b81453589
 
 build:
-  number: 3
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv --no-deps
   noarch: python
 
