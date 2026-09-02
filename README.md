@@ -1,5 +1,5 @@
-About jupyterlab_nbconvert_nocode-feedstock
-===========================================
+About jupyterlab_nbconvert_nocode-meta-feedstock
+================================================
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/jupyterlab_nbconvert_nocode-meta-feedstock/blob/main/LICENSE.txt)
 
@@ -15,10 +15,11 @@ Current build status
 ====================
 
 
-<table><tr><td>All platforms:</td>
+<table><tr>
+    <td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=16336&branchName=main">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/jupyterlab_nbconvert_nocode-meta-feedstock?branchName=main">
+      <a href="https://github.com/conda-forge/jupyterlab_nbconvert_nocode-meta-feedstock/actions/workflows/conda-build.yml">
+        <img src="https://github.com/conda-forge/jupyterlab_nbconvert_nocode-meta-feedstock/actions/workflows/conda-build.yml/badge.svg?event=push&branch=main">
       </a>
     </td>
   </tr>
@@ -32,41 +33,83 @@ Current release info
 | [![Conda Recipe](https://img.shields.io/badge/recipe-jupyterlab--nbconvert--nocode-green.svg)](https://anaconda.org/conda-forge/jupyterlab-nbconvert-nocode) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/jupyterlab-nbconvert-nocode.svg)](https://anaconda.org/conda-forge/jupyterlab-nbconvert-nocode) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/jupyterlab-nbconvert-nocode.svg)](https://anaconda.org/conda-forge/jupyterlab-nbconvert-nocode) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/jupyterlab-nbconvert-nocode.svg)](https://anaconda.org/conda-forge/jupyterlab-nbconvert-nocode) |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-jupyterlab__nbconvert__nocode-green.svg)](https://anaconda.org/conda-forge/jupyterlab_nbconvert_nocode) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/jupyterlab_nbconvert_nocode.svg)](https://anaconda.org/conda-forge/jupyterlab_nbconvert_nocode) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/jupyterlab_nbconvert_nocode.svg)](https://anaconda.org/conda-forge/jupyterlab_nbconvert_nocode) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/jupyterlab_nbconvert_nocode.svg)](https://anaconda.org/conda-forge/jupyterlab_nbconvert_nocode) |
 
-Installing jupyterlab_nbconvert_nocode
-======================================
+Installing jupyterlab_nbconvert_nocode-meta
+===========================================
 
-Installing `jupyterlab_nbconvert_nocode` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `jupyterlab_nbconvert_nocode-meta` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
 
 ```
 conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `jupyterlab-nbconvert-nocode, jupyterlab_nbconvert_nocode` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda install jupyterlab-nbconvert-nocode jupyterlab_nbconvert_nocode
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba install jupyterlab-nbconvert-nocode jupyterlab_nbconvert_nocode
 ```
 
-It is possible to list all of the versions of `jupyterlab-nbconvert-nocode` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+# for adding to your local project
+pixi add jupyterlab-nbconvert-nocode jupyterlab_nbconvert_nocode
+# for installing globally
+pixi global install jupyterlab-nbconvert-nocode jupyterlab_nbconvert_nocode
+```
+
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `jupyterlab-nbconvert-nocode` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda search jupyterlab-nbconvert-nocode --channel conda-forge
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba search jupyterlab-nbconvert-nocode --channel conda-forge
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search jupyterlab-nbconvert-nocode --channel conda-forge
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
@@ -78,6 +121,8 @@ mamba repoquery whoneeds jupyterlab-nbconvert-nocode --channel conda-forge
 # List dependencies of `jupyterlab-nbconvert-nocode`:
 mamba repoquery depends jupyterlab-nbconvert-nocode --channel conda-forge
 ```
+
+</details>
 
 
 About conda-forge
@@ -121,17 +166,17 @@ Terminology
                   produce the finished article (built conda distributions)
 
 
-Updating jupyterlab_nbconvert_nocode-feedstock
-==============================================
+Updating jupyterlab_nbconvert_nocode-meta-feedstock
+===================================================
 
-If you would like to improve the jupyterlab_nbconvert_nocode recipe or build a new
+If you would like to improve the jupyterlab_nbconvert_nocode-meta recipe or build a new
 package version, please fork this repository and submit a PR. Upon submission,
 your changes will be run on the appropriate platforms to give the reviewer an
 opportunity to confirm that the changes result in a successful build. Once
 merged, the recipe will be re-built and uploaded automatically to the
 `conda-forge` channel, whereupon the built conda packages will be available for
 everybody to install and use from the `conda-forge` channel.
-Note that all branches in the conda-forge/jupyterlab_nbconvert_nocode-feedstock are
+Note that all branches in the conda-forge/jupyterlab_nbconvert_nocode-meta-feedstock are
 immediately built and any created packages are uploaded, so PRs should be based
 on branches in forks, and branches in the main repository should only be used to
 build distinct package versions.
